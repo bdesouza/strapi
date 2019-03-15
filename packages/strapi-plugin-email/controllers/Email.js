@@ -20,7 +20,7 @@ module.exports = {
     // Verify if the file email is enable.
     if (config.enabled === false) {
       strapi.log.error('Email is disabled');
-      return ctx.badRequest(null, ctx.request.admin ? [{ messages: [{ id: 'Email.status.disabled' }] }] : 'Emailis disabled');
+      return ctx.badRequest(null, ctx.request.admin ? [{ messages: [{ id: 'Email.status.disabled' }] }] : 'Email is disabled');
     }
 
     // Something is wrong
